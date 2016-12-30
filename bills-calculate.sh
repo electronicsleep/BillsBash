@@ -19,7 +19,7 @@ echo "------------" >> $FILE
 
 cat ./bills.txt | grep "CUR_BAL " >> $FILE
 
-TOTAL=`cat ./bills.txt | grep 'CUR_BAL ' | cut -d ' ' -f 3 | awk '{ SUM += $1; print $1} END { print SUM }' | tail -n 1`
+TOTAL=$(cat ./bills.txt | grep 'CUR_BAL ' | cut -d ' ' -f 3 | awk '{ SUM += $1; print $1} END { print SUM }' | tail -n 1)
 
 echo "------TOTAL------" >> $FILE
 
