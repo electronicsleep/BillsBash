@@ -10,19 +10,21 @@
 
 DATE=$(date +%Y-%m)
 
-echo "##########################" > ./bills-calc/bills-total-bal-$DATE.txt
-echo "BILLS DATE: $DATE" >> ./bills-calc/bills-total-bal-$DATE.txt
-echo "##########################" >> ./bills-calc/bills-total-bal-$DATE.txt
-echo "------------" >> ./bills-calc/bills-total-bal-$DATE.txt
+FILE=./bills-calc/bills-total-bal-$DATE.txt
 
-cat ./bills.txt | grep "CUR_BAL " >> ./bills-calc/bills-total-bal-$DATE.txt
+echo "##########################" > $FILE
+echo "BILLS DATE: $DATE" >> $FILE
+echo "##########################" >> $FILE
+echo "------------" >> $FILE
+
+cat ./bills.txt | grep "CUR_BAL " >> $FILE
 
 TOTAL=`cat ./bills.txt | grep 'CUR_BAL ' | cut -d ' ' -f 3 | awk '{ SUM += $1; print $1} END { print SUM }' | tail -n 1`
 
-echo "------TOTAL------" >> ./bills-calc/bills-total-bal-$DATE.txt
+echo "------TOTAL------" >> $FILE
 
-echo "BALANCE: $TOTAL" >> ./bills-calc/bills-total-bal-$DATE.txt
-echo "------------" >> ./bills-calc/bills-total-bal-$DATE.txt
+echo "BALANCE: $TOTAL" >> $FILE
+echo "------------" >> $FILE
 
 cat ./bills-calc/bills-total-bal-*.txt
 
