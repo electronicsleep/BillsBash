@@ -1,0 +1,13 @@
+### BILLS ###
+
+CARD1 Type
+---------------
+CUR_BAL CARD1 100
+PAST_BAL 0
+PHONE
+
+CARD2 Type
+---------------
+CUR_BAL CARD1 200 
+PAST_BAL 0
+PHONE
