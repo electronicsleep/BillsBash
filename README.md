@@ -6,6 +6,9 @@ Features:
 - Will keep a running total until the month ends
 - Will keep a unique sortable monthly file for records
 
+What you have to do:
+- Ensure data is in the right format
+
 Files:
 - bills.txt #Text file will bills balance and contact info
 - bills-calc #Directory with running monthly balance tracking

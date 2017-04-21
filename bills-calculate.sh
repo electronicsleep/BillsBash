@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Author: Chris Robertson <electronicsleep@gmail.com>
+# Author: Chris Robertson https://github.com/electronicsleep
 # Date: 12/30/2016
 # Purpose: Simple bill calculation bash script
 # Released under the BSD license
