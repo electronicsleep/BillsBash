@@ -3,8 +3,9 @@ BillsBash - The most simple cost tracking software ever
 Payoff your bills
 
 Features:
-- Will keep a running total until the month ends
-- Will keep a unique sortable monthly file for records
+- Keep a running total of each month until the month ends
+- Keep unique sortable monthly file for records
+- Keeps each month numerically sorted
 
 What you have to do:
 - Ensure data is in the right format
